@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordCraft Mini-Game Demo</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: white;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        canvas {
+            background-color: #1e293b;
+            border: 2px solid #6366f1;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+        .instructions {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .back-btn {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Catch the Star ⭐</h2>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div class="instructions">Use your <b>Left</b> and <b>Right</b> arrow keys to catch the falling stars!</div>
+    
+    <!-- Optional: If you want a button to go back or test navigation -->
+    <button class="back-btn" onclick="alert('Test environment working perfectly!')">Test Button</button>
+
+    <!-- Game Logic Script -->
+    <script src="game.js"></script>
+</body>
+</html>
